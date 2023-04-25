@@ -24,26 +24,6 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      body: Container(),
-    );
-  }
-}
-
-class CategoryCard extends StatelessWidget {
-  const CategoryCard({super.key});
-
-
-final imageUrl, categoryName;
-
-CategoryTitle({this.imageUrl, this.categoryName})
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Stack(
-        children: <Widget>[
-          Image.network(imageUrl, width: 120, height: 60,)
-        ],
-      ),
     );
   }
 }

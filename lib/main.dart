@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:news/screens/home.dart';
+import 'package:news/views/onBoard.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: "Virgin News",
+    theme: ThemeData(),
+    home: const OnBoardPage(),
+  ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.amber,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home Page'),
       ),
-      home: const Home(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
