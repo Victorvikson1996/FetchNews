@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/views/dashboard.dart';
 import 'package:news/views/onBoard.dart';
 
 void main() {
@@ -6,7 +7,7 @@ void main() {
     debugShowCheckedModeBanner: false,
     title: "Virgin News",
     theme: ThemeData(),
-    home: const OnBoardPage(),
+    home: const DashboardPage(),
   ));
 }
 

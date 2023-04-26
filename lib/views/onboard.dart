@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class OnBoardPage extends StatelessWidget {
@@ -38,14 +39,16 @@ class OnBoardPage extends StatelessWidget {
                     fontSize: 40,
                   ),
                 ),
+                const Gap(12),
                 const Text(
                   'Discover the Latest News with our Seamless OnBoarding Experiences',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: 20,
                   ),
                   textAlign: TextAlign.center,
                 ),
+                const Gap(12),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       shape: const StadiumBorder(),
