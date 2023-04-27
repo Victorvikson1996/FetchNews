@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:news/views/dashboard.dart';
-import 'package:news/views/onBoard.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: "Virgin News",
-    theme: ThemeData(),
-    home: const DashboardPage(),
+  runApp(ProviderScope(
+    child: MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Virgin News",
+      theme: ThemeData(),
+      home: const DashboardPage(),
+    ),
   ));
 }
 
